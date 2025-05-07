@@ -26,4 +26,10 @@ Tambien puedes iniciar el proyecto desde una carpeta ya existente. Para hacer si
 * `git init`
 
 Ambas formas sirven para poder crear un proyecto.
+## clase 2: States y commits
+### Los 3 estados de git 
+* **Modified:** El archivo fue creado, eliminado o este tiene cambios que no fueron marcados como confirmados.
 
+* **Staged:** El archivo has sido marcado como preparado para ser confirmado en el repositorio local.
+
+* **Commited:** El archivo se encuentra grabado en el repositorio local. Esta accion recibe el nombre de **commit**.
