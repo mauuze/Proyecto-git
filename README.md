@@ -1,4 +1,5 @@
 # Curso Git y GitHub
+![imagen_git_github](imagenes/R.jpeg)
 ## Clase 1 
 ### ¿Que es un control de versiones?
 Es un sistema que registra cada cambio que se realiza 
