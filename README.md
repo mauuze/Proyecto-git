@@ -33,3 +33,27 @@ Ambas formas sirven para poder crear un proyecto.
 * **Staged:** El archivo has sido marcado como preparado para ser confirmado en el repositorio local.
 
 * **Commited:** El archivo se encuentra grabado en el repositorio local. Esta accion recibe el nombre de **commit**.
+
+### Como cambiar el estado
+Para saber el estado actual de nuestro repositorio usamos
+* `git status`
+
+esto nos avisara si algun archivo de nuestro repositorio recibio algun cambio 
+
+Si algun archivo fue modificado nos aparecera:
+
+Ahora llevaremos el archivo README.md al estado **staged** con el siguiente comando:
+* `git add` README.md
+
+Ahora si volvemos a ejecutar el `git status` no aparecera lo siguiente:
+
+confirmando que el archivo fue modificado.
+
+Ahora nuestro Archivo README.md esta listo para ser guardado en un commit, ejecutamos el siguiente comando:
+* `git commit`
+
+en el caso de Linux se nos abrira lo siguiente en la terminal:
+
+Con esto ya estaria hecho tu commit, para revisar todos los commits hechos puedes utilizar el comando: 
+ * `git log`
+
