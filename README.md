@@ -47,13 +47,26 @@ Ahora llevaremos el archivo README.md al estado **staged** con el siguiente coma
 
 Ahora si volvemos a ejecutar el `git status` no aparecera lo siguiente:
 
-confirmando que el archivo fue modificado.
+confirmando que el archivo fue movido al stage.
 
-Ahora nuestro Archivo README.md esta listo para ser guardado en un commit, ejecutamos el siguiente comando:
-* `git commit`
+
+### ¿Que es un commit?
+Es una de las piezas mas fundamentales de Git.
+
+Sirven para registrar los cambios realizados en nuestro respositorio, se podria decir que son como los checkpoints en los videojuegos ya tendriamos un punto al cual volver si nos equivocamos. Estos puntos de guardado serian nuestros commits y van firmados con un autor, fecha, localizacion y otra informacion util.
+
+### ¿Como hago un commit?
+Antes de realizar un commit nuestros cambios ya deben estar en la estado **staged**.
+
+Para realizar un **commit** realizamos el siguiente comando:
+* `git commit` 
 
 en el caso de Linux se nos abrira lo siguiente en la terminal:
 
-Con esto ya estaria hecho tu commit, para revisar todos los commits hechos puedes utilizar el comando: 
- * `git log`
+Otra manera de realizar el commit sin que se nos abra la terminal, podemos usar el siguiente comando:
+* `git commit -m <"nombre del commit>` 
 
+De igual manera el nombre del commit debe describir los cambios realizados en el repositorio.
+
+Para evisar todos los commits hechos puedes utilizar el comando: 
+ * `git log`
