@@ -20,8 +20,10 @@ Existen 2 formas para crear un proyecto en git.
 Si quieres crear un proyecto desde 0 (crear un repositorio local), puedes usar `git init` con el nombre del proyecto qur quieras. Esto crea una carpeta vacia con el nombre del proyecto.
 * ` git init <nombre_proyecto> ` 
 * `cd <nombre_proyecto>`
+
 Tambien puedes iniciar el proyecto desde una carpeta ya existente. Para hacer simplemente usas `git init` dentro de la raiz del directorio del tu proyecto.
 * `cd <directorio del proyecto>`
 * `git init`
+
 Ambas formas sirven para poder crear un proyecto.
 
