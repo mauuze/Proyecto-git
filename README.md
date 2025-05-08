@@ -49,7 +49,6 @@ Ahora si volvemos a ejecutar el `git status` no aparecera lo siguiente:
 
 confirmando que el archivo fue movido al stage.
 
-
 ### ¿Que es un commit?
 Es una de las piezas mas fundamentales de Git.
 
@@ -68,5 +67,27 @@ Otra manera de realizar el commit sin que se nos abra la terminal, podemos usar 
 
 De igual manera el nombre del commit debe describir los cambios realizados en el repositorio.
 
-Para evisar todos los commits hechos puedes utilizar el comando: 
+Para revisar todos los commits hechos puedes utilizar el comando: 
  * `git log`
+
+### ¿Que es el HEAD?
+El **HEAD** es como un flecha que te indica "estas aqui". Solo puedes estar en un solo lugar y ese lugar es el HEAD.
+
+Es el puntero que referencia el punto actual del historial de cambios del repositorio en el que estas trajando.
+## Ramas, merge y conflictos
+### ¿Que es una rama?
+Una rama es una division del punto actual en el que nos encontramos en la rama principal.
+### ¿Para que siven las ramas?
+Nos sirven hacer desarrollo no lineal y colaborativo, ya que al poder hacer bifuraciones de nuestro codigo cada uno puede trabajar distintos aspectos de este.
+### Creando nuestra primera rama
+Para crear una rama usamos el siguiente comando:
+ * `git branch <nombre_de_nuestra_rama>`
+
+ Ahora para ir a nuestra rama utilizamos el comando:
+ * `git switch <nombre_de_nuestra_rama>`
+
+ Tambien existe un comando que nos permite crear la rama y llevarnos directamente a esta, el comando es:
+* `git switch -c <nombre_de_nuestra_rama>`
+
+Para poder crear una rama minimamente debemos tener un commit en el repositorio, lo cual tiene sentido ya que como se podria crear una rama de algo que no tiene ni tronco.
+
