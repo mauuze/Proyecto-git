@@ -112,16 +112,43 @@ Para poder crear una rama, mínimamente debemos tener un commit en el repositori
 ## Clase 3: Más de ramas
 
 ### Fusionar ramas
-Las divisiones que creamos en forma de rama solo tienen 2 destinos: acabar en el olvido o ser fusionada en otra rama.
+Las divisiones que creamos en forma de rama solo tienen dos destinos: acabar en el olvido o ser fusionadas en otra rama.
 
-**¿Pero a que nos referimos con fusion?**, cuando hablamos de funcion nos referimos a que los cambios en nuestra rama se integran con otra, de forma que el codigo que habiamos generado en la nueva rama se asimila en otra.
+**¿Pero a qué nos referimos con fusión?**  
+Cuando hablamos de fusión nos referimos a que los cambios en nuestra rama se integran con otra, de forma que el código que habíamos generado en la nueva rama se asimila en otra.
 
 Para fusionar ramas empleamos el comando: 
 * `git merge <nombre_rama_a_fusionar>`
 
-Vemos que inmediatamente si solo se hicieron cambios en la rama a fusionar, pero si realizamos tanto cambios en muestra rama main como en la rama a fusionar nos sale una ventana de que se va a crear un commit de esta fusión, esto sucede porque en el primer caso se hizo un **fast-forward**.
-### ¿Que es un fast-forward?
-Cuando solo se hacen cambios en una rama el primer commit de la rama apunta directamente al ultimo commit de la rama main por asi decirlo, lo que hace el fast-forward es que movera el puntero de nuestro ultimo commit de la rama main al ultimo commit de nuestra rama ya que no al no hacer cambios en la rama main nuestro codigo todavia no se dividio mas que hacia la rama que hicimos.
+Vemos que la fusión ocurre inmediatamente si solo se hicieron cambios en la rama a fusionar.  
+Pero si realizamos cambios tanto en nuestra rama `main` como en la rama a fusionar, nos aparece una ventana indicando que se va a crear un commit de fusión.  
+Esto sucede porque en el primer caso se hizo un **fast-forward**.
+
+### ¿Qué es un fast-forward?
+Cuando solo se hacen cambios en una rama, el primer commit de esta apunta directamente al último commit de la rama `main`, por así decirlo.  
+Lo que hace el fast-forward es mover el puntero del último commit de la rama `main` al último commit de nuestra nueva rama, ya que, al no haber cambios en `main`, nuestro código no se dividió realmente, más allá de la rama que creamos.
+
+### ¿Por qué no se crea el fast-forward cuando hacemos cambios en el `main`?
+Se podría decir que, al momento de hacer cambios en nuestra rama `main` y en la otra rama, se forman dos caminos distintos desde el último commit antes de crear la rama.  
+Entonces, para poder volver al camino principal, se necesita crear un commit que fusione el último commit de la rama con el último commit del otro camino generado desde `main`.
+
+Ambos casos son una fusión. La única diferencia es que en uno se genera un commit explícito y en el otro no, ya que el fast-forward no necesita uno.
+
+### Eliminar ramas ¿por qué?
+Porque es una buena práctica. Además, las ramas tienen un propósito específico, lo que implica un corto periodo de vida. Así mantenemos limpio nuestro repositorio.
+
+Para eliminar ramas se utiliza el comando:
+* `git branch --delete <nombre_rama_a_eliminar>`
+
+O para resumir:
+* `git branch -d <nombre_rama_a_eliminar>`
+
+En el caso de no haber fusionado la rama, nos aparecerá un mensaje como advertencia.
+
+Si quisiéramos eliminar la rama sin importar si esta se fusionó o no, tenemos que utilizar el siguiente comando:
+* `git branch -D <nombre_rama_a_eliminar>`
+
+Lo que nos permite borrar la rama sin necesidad de que haya sido fusionada.
 
 
 
