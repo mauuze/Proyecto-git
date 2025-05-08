@@ -9,7 +9,7 @@ producidos en los ficheros.
 Basicamente como un historial de todos los cambios que 
 hiciste en tu codigo. 
 ### ¿Que es git?
-Git es una herramient de control de versiones diseñado por Linus Torvalds.
+Git es una herramienta de control de versiones diseñado por Linus Torvalds.
 ### ¿Que es un repositorio?
 Son el pilar de git.
 
@@ -41,12 +41,14 @@ Para saber el estado actual de nuestro repositorio usamos
 esto nos avisara si algun archivo de nuestro repositorio recibio algun cambio 
 
 Si algun archivo fue modificado nos aparecera:
+
 ![imagen_archivo_modificado](imagenes/archivo_modificado.png)
 
 Ahora llevaremos el archivo README.md al estado **staged** con el siguiente comando:
 * `git add` README.md
 
 Ahora si volvemos a ejecutar el `git status` no aparecera lo siguiente:
+
 ![imagen_achivo_staged](imagenes/archivo_estado_staged.png)
 
 confirmando que el archivo fue movido al stage.
@@ -63,7 +65,8 @@ Para realizar un **commit** realizamos el siguiente comando:
 * `git commit` 
 
 en el caso de Linux se nos abrira lo siguiente en la terminal:
-![imagen_ventana_terminal](imagenes/ventana_commit.png)
+
+<img src="imagenes/ramas.jpg" alt="imagen_ramas" width="350"/>
 
 Otra manera de realizar el commit sin que se nos abra la terminal, podemos usar el siguiente comando:
 * `git commit -m <"nombre del commit>` 
@@ -82,7 +85,8 @@ Es el puntero que referencia el punto actual del historial de cambios del reposi
 Una rama es una division del punto actual en el que nos encontramos en la rama principal.
 ### ¿Para que siven las ramas?
 Nos sirven hacer desarrollo no lineal y colaborativo, ya que al poder hacer bifuraciones de nuestro codigo cada uno puede trabajar distintos aspectos de este.
-![imagen_ramas](imagenes/ramas.jpg)
+
+<img src="imagenes/ramas.jpg" alt="imagen_ramas" width="350"/>
 
 ### Creando nuestra primera rama
 Para crear una rama usamos el siguiente comando:
