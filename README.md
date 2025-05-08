@@ -66,7 +66,7 @@ Para realizar un **commit** realizamos el siguiente comando:
 
 en el caso de Linux se nos abrira lo siguiente en la terminal:
 
-<img src="imagenes/ramas.jpg" alt="imagen_ramas" width="350"/>
+<img src="imagenes/ventana_commit.png" alt="imagen_ventana_commit" width="650"/>
 
 Otra manera de realizar el commit sin que se nos abra la terminal, podemos usar el siguiente comando:
 * `git commit -m <"nombre del commit>` 
@@ -86,7 +86,7 @@ Una rama es una division del punto actual en el que nos encontramos en la rama p
 ### ¿Para que siven las ramas?
 Nos sirven hacer desarrollo no lineal y colaborativo, ya que al poder hacer bifuraciones de nuestro codigo cada uno puede trabajar distintos aspectos de este.
 
-<img src="imagenes/ramas.jpg" alt="imagen_ramas" width="350"/>
+<img src="imagenes/ramas.jpg" alt="imagen_ramas" width="650"/>
 
 ### Creando nuestra primera rama
 Para crear una rama usamos el siguiente comando:
