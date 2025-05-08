@@ -109,5 +109,19 @@ También existe un comando que nos permite crear la rama y llevarnos directament
 * `git switch -c <nombre_de_nuestra_rama>`
 
 Para poder crear una rama, mínimamente debemos tener un commit en el repositorio, lo cual tiene sentido, ya que ¿cómo se podría crear una rama de algo que no tiene ni tronco?
+## Clase 3: Más de ramas
+
+### Fusionar ramas
+Las divisiones que creamos en forma de rama solo tienen 2 destinos: acabar en el olvido o ser fusionada en otra rama.
+
+**¿Pero a que nos referimos con fusion?**, cuando hablamos de funcion nos referimos a que los cambios en nuestra rama se integran con otra, de forma que el codigo que habiamos generado en la nueva rama se asimila en otra.
+
+Para fusionar ramas empleamos el comando: 
+* `git merge <nombre_rama_a_fusionar>`
+
+Vemos que inmediatamente si solo se hicieron cambios en la rama a fusionar, pero si realizamos tanto cambios en muestra rama main como en la rama a fusionar nos sale una ventana de que se va a crear un commit de esta fusión, esto sucede porque en el primer caso se hizo un **fast-forward**.
+### ¿Que es un fast-forward?
+Cuando solo se hacen cambios en una rama el primer commit de la rama apunta directamente al ultimo commit de la rama main por asi decirlo, lo que hace el fast-forward es que movera el puntero de nuestro ultimo commit de la rama main al ultimo commit de nuestra rama ya que no al no hacer cambios en la rama main nuestro codigo todavia no se dividio mas que hacia la rama que hicimos.
+
 
 
