@@ -41,11 +41,13 @@ Para saber el estado actual de nuestro repositorio usamos
 esto nos avisara si algun archivo de nuestro repositorio recibio algun cambio 
 
 Si algun archivo fue modificado nos aparecera:
+![imagen_archivo_modificado](imagenes/archivo_modificado.png)
 
 Ahora llevaremos el archivo README.md al estado **staged** con el siguiente comando:
 * `git add` README.md
 
 Ahora si volvemos a ejecutar el `git status` no aparecera lo siguiente:
+![imagen_achivo_staged](imagenes/archivo_estado_staged.png)
 
 confirmando que el archivo fue movido al stage.
 
@@ -61,6 +63,7 @@ Para realizar un **commit** realizamos el siguiente comando:
 * `git commit` 
 
 en el caso de Linux se nos abrira lo siguiente en la terminal:
+![imagen_ventana_terminal](imagenes/ventana_commit.png)
 
 Otra manera de realizar el commit sin que se nos abra la terminal, podemos usar el siguiente comando:
 * `git commit -m <"nombre del commit>` 
@@ -74,11 +77,13 @@ Para revisar todos los commits hechos puedes utilizar el comando:
 El **HEAD** es como un flecha que te indica "estas aqui". Solo puedes estar en un solo lugar y ese lugar es el HEAD.
 
 Es el puntero que referencia el punto actual del historial de cambios del repositorio en el que estas trajando.
-## Ramas, merge y conflictos
+### Ramas, merge y conflictos
 ### ¿Que es una rama?
 Una rama es una division del punto actual en el que nos encontramos en la rama principal.
 ### ¿Para que siven las ramas?
 Nos sirven hacer desarrollo no lineal y colaborativo, ya que al poder hacer bifuraciones de nuestro codigo cada uno puede trabajar distintos aspectos de este.
+![imagen_ramas](imagenes/ramas.jpg)
+
 ### Creando nuestra primera rama
 Para crear una rama usamos el siguiente comando:
  * `git branch <nombre_de_nuestra_rama>`
