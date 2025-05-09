@@ -497,19 +497,28 @@ Hacer commits a menudo no significa que debas hacer commits sin sentido.
 ### Prefijos para commits
 
 * **feat:** Para una nueva característica para el usuario.
+
 * **fix:** Para un bug que afecta al usuario.
+
 * **perf:** Para cambios que mejoran el rendimiento del sitio.
+
 * **build** Para cambios en el sistema de build, tareas de dspliegue, o instalación.
+
 * **ci:** Para cambios en la integración continua.
+
 * **docs:** Para cambios en la documentación.
+
 * **refactor:** Para refactorización del código como cambios de nombre de variables o funciones.
-* **style:** Para cambios de formato, tabulaciones, espacios o puntos y coma, etc; noafectan al usuario
+
+* **style:** Para cambios de formato, tabulaciones, espacios o puntos y coma, etc; no afectan al usuario
+
 * **test:** Para tests o refactorización de uno ya existente.
 
 #### Escribir un buen nombre de rama
 
 * Sé consistente al nombrar tus ramas.
 * Usa el nombre de la acción que se realiza en la rama.
+
   **Ejemplo**
 
   * experiment/probar_nuevo_diseño_ui
