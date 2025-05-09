@@ -334,3 +334,12 @@ Comando para clonar repositorios ya avanzados:
 
 Comando para subir nuestros cambios del repositorio local al repositorio remoto:  
 * `git push origin <rama>`
+
+### Push, pull y pull request
+
+### ¿Cuál es la diferencia entre git push y git pull?
+* **Git push**
+    Nos sirve para empujar (subir) cualquier cambio o modificacion del repositorio local al repositorio remoto
+
+* **Git pull**
+    Nos sirve para traer cambios del repositorio remoto al repositorio local.
