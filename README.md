@@ -435,10 +435,22 @@ La diferencia con GitHub Flow es que las ramas deben ser lo más efímeras y peq
 Este método debe contar si o si con un sistema de **CI/CD** (Integración y Entrega Continuas).
 
 ### Ship / Show / Ask
-Este metodo nos dice que los desarrolladores ya en el ambito laboral pueden tomar decisiones coherente y no son niños, por ejemplo en los 2 anteriores metodos se les restringia el acceso a la rama main por que pueden cometer errores. 
+Este método nos dice que los desarrolladores, ya en el ámbito laboral, pueden tomar decisiones coherentes y no son niños. Por ejemplo, en los dos métodos anteriores se les restringía el acceso a la rama main porque podían cometer errores.
 
-* **Ship:** Tus cambios se fusionan con la rama principal sin revisión, esto lo haces cuando estas 100% seguro de que tu cambio funciona bien.
+* **Ship:** Tus cambios se fusionan con la rama principal sin revisión. Esto lo haces cuando estás 100% seguro de que tu cambio funciona bien.
 
-* **Show:** Abre una petición de cambios para que sean revisados por CI y se fusionan inmediatamente, es decir que si pasan el CI se fusionan y ademas se abre una **PR** para debate, esto se utiliza cuando estas un 80% seguro de que tu codigo funcione bien o si bien solo quieres que tu equipo tenga un contexto de lo que hiciste.
+* **Show:** Abres una petición de cambios para que sean revisados por CI y se fusionen inmediatamente. Es decir, si pasan el CI se fusionan, y además se abre una **PR** para debate. Esto se utiliza cuando estás un 80% seguro de que tu código funcione bien o si solo quieres que tu equipo tenga un contexto de lo que hiciste.
 
-* **Ask:** Abre una PR para discutir los cambios antes de fusionarlos, y se utiliza cuando estas menos de 10% de que tu codigo o implementación funcione bien, asi puedes recibir feedback y discutir los cambios.
+* **Ask:** Abres una **PR** para discutir los cambios antes de fusionarlos. Se utiliza cuando estás menos de un 10% seguro de que tu código o implementación funcione bien, así puedes recibir feedback y discutir los cambios.
+
+### Las reglas de Ship / Show / Ask
+
+* Tener un buen sistema de **CI/CD** ayuda un montón, pero no es obligatorio tenerlo.
+
+* Confiamos en el equipo y existen buenas prácticas de desarrollo: pair programming, mob programming, seniority... y, sobre todo, existe responsabilidad. Las personas se responsabilizan de decidir la categoría de su cambio. **Un gran poder, como poder hacer merge de tus propias Pull Requests, conlleva una gran responsabilidad (no romper producción).**
+
+* Las revisiones de código no son un requisito.
+
+* Las ramas son lo más pequeñas posible, tienen un tiempo de vida corto y siempre salen directamente desde la rama principal.
+
+* El equipo ha sabido lidiar con el ego individual, las personas confían en el resto del equipo y las pruebas automáticas pasan.
