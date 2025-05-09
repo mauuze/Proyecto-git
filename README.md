@@ -268,7 +268,7 @@ Para enlazar un repositorio, utilizamos el siguiente comando:
 
 Para obtener la URL, simplemente copiamos esta parte:
 
-
+![imagen_URL](imagenes/URL.png)
 
 Si nos estamos conectando a un repositorio ya existente, utilizamos el siguiente comando:
 * `git clone <url_del_repositorio_GitHub>`
@@ -277,33 +277,60 @@ Lo que hace `git clone` es crear una copia del repositorio remoto en nuestro rep
 
 Para obtener la URL de un repositorio ya existente, la copiamos del siguiente lugar:
 
+![imagen_URL2](imagenes/URL2.png)
+
 ### Escribiendo en el repositorio remoto
 Para poder subir cambios a nuestro repositorio remoto utilizamos el comando:
 
-* `git push origin <rama_de_la_que_queremos_subir_los_cambios>`
-    * Por lo general es la rama main o master, nuestra rama principal.
+* `git push origin <rama_que_queremos_subir>`
+  * Por lo general es la rama `main` o `master`, nuestra rama principal.
 
-Con esto nuestro repositorio remoto ya deberia contoner los archivos de la rama que subimos de nuestro repositorio local.
+Con esto, nuestro repositorio remoto ya debería contener los archivos de la rama que subimos desde nuestro repositorio local.
 
-Para observar nuestras ramas tanto del repositorio local y las ramas del repositorio remoto utilizamos el comando: 
+Para observar nuestras ramas tanto del repositorio local como las ramas del repositorio remoto utilizamos el comando:
 * `git branch -a`
 
+![imagen_ramas_](imagenes/ramas_.png)
 
+Las ramas que están en color rojo son las ramas que ya están en el repositorio remoto.
 
-Las ramas que se estan de color rojo son las ramas que ya estan en el repositorio remoto.
+Para subir una rama a nuestro repositorio remoto, esta primero debe estar en nuestro repositorio local. Si intentamos subir una rama que no existe localmente, nos saldrá lo siguiente:
 
-Para subir una rama a nuestro repositorio remoto esta primero debe estar en nuestro repositorio local, si intentamos subir una rama sin que este en nuestro repositorio local nos saldria lo siguiente: 
+![imagen_subir_rama_que_no_existe](imagenes/subir_rama_que_no_existe.png)
 
 ### Eliminar ramas de mi repositorio local que ya no se usan
-Digamos que una rama se borro ya del repositorio remoto pero la referencia sigue apareciendo en tu repositorio local sigue apareciendo, para eliminar esta referencia tienes que utilizar el siguiente comando:
+Digamos que una rama se eliminó del repositorio remoto, pero la referencia sigue apareciendo en tu repositorio local. Para eliminar esta referencia tienes que utilizar el siguiente comando:
 * `git remote prune origin`
 
-Esto basicamente actualiza las referencias de ramas que tiene tu repositorio loca con las de tu repositorio remoto.
+Esto básicamente actualiza las referencias de ramas que tiene tu repositorio local con las del repositorio remoto.
 
-### Actulizar referencias de ramas en tu repositorio local
-Si podemos eliminar las referencias de una rama, tambien podemos actualizar y traer nuevas referencias de las ramas remotas, esto se hace con el comando: 
+### Actualizar referencias de ramas en tu repositorio local
+Así como podemos eliminar las referencias de una rama, también podemos actualizarlas y traer nuevas referencias de las ramas remotas. Esto se hace con el comando:
 * `git fetch`
 
-Es importante utilizar un `git fetch` antes de un **pull**, comando para traer cambios del repositorio remoto, ya que podriamos traer los cambios de otra rama a nuestra rama principal.
+Es importante utilizar un `git fetch` antes de un **pull**, comando para traer cambios del repositorio remoto, ya que podríamos traer los cambios de otra rama a nuestra rama principal.
 
-Para poder utilizar una rama de tu repositorio remoto en tu repositorio local, primero debes hacer un switch a la referencia de esa rama.
+Para poder utilizar una rama de tu repositorio remoto en tu repositorio local, primero debes hacer un `switch` a la referencia de esa rama.
+
+### Comandos útiles
+
+Comando para sincronizar el repositorio local con el remoto:  
+* `git remote add origin <url_del_repositorio_GitHub>`
+
+Comando para mostrar el alias del URL al que apuntan:  
+* `git remote -v`
+
+Comando para eliminar referencias de ramas en tu repositorio local:  
+* `git remote prune origin`
+
+Comando para actualizar referencias de ramas en tu repositorio local:  
+* `git fetch`
+
+Comando para cambiar a una rama remota:  
+* `git switch <rama_remota>`
+
+Comando para clonar repositorios ya avanzados:  
+* `git clone <url_del_repositorio_GitHub>`
+
+Comando para subir nuestros cambios del repositorio local al repositorio remoto:  
+* `git push origin <rama>`
