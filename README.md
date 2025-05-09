@@ -506,4 +506,11 @@ Hacer commits a menudo no significa que debas hacer commits sin sentido.
 * **style:** Para cambios de formato, tabulaciones, espacios o puntos y coma, etc; noafectan al usuario
 * **test:** Para tests o refactorización de uno ya existente.
 
+#### Escribir un buen nombre de rama
 
+* Sé consistente al nombrar tus ramas.
+* Usa el nombre de la acción que se realiza en la rama.
+  **Ejemplo**
+
+  * experiment/probar_nuevo_diseño_ui
+  * bug/erro_inicio_sesión
