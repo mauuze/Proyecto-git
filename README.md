@@ -638,3 +638,13 @@ Otra manera de volver a traer los commits es con el comando:
 * `git pull origin main`
 
 Esto solo funcionará si nuestros commits ya fueron guardados en la nube.
+
+## Clase 8: Hook, Alias y Trucos de Git
+
+## ¿Qué es un Hook?
+
+* Un hook, o punto de enganche, son acciones que se ejecutan de manera automatizada luego de ciertas acciones determinadas en Git. POr ejemplo pueden ejecutarse luego de un commit, de un push o antes de estos.
+
+* Pueden ser tanto de parte del cliente como de parte del servidor.
+
+
