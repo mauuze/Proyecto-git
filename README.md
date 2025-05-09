@@ -397,3 +397,10 @@ Tenemos que subir nuestra rama con `git push` y a continuación hay 2 maneras:
 
 * **Explica tu Pull Request**  
   Trata de ser lo más claro posible en la Pull Request. Además, puedes aprovechar para subir una imagen, video o incluso un GIF.
+
+### Revisar una PR
+* Proporciona siempre feedback positivo.
+
+* Corrección y claridad. Sé específico acerca del problema que encuentras y haz que sea fácil para la otra persona corregir el error.
+
+* **Entiende el contexto**, es posible que, a veces, tengamos que aplicar soluciones temporales o parches a nuestro código y que, pese a no ser el más bonito, sí cumpla su cometido.
