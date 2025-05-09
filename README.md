@@ -523,3 +523,118 @@ Hacer commits a menudo no significa que debas hacer commits sin sentido.
 
   * experiment/probar_nuevo_diseño_ui
   * bug/erro_inicio_sesión
+
+## Clase 7: Deshacer cambios
+
+### ¿En qué casos deshacemos cambios?
+
+* Cuando un proyecto dejó de funcionar.
+
+* Queremos recuperar una parte del código que eliminamos.
+
+* Queremos recuperar archivos que eliminamos.
+
+### Comandos destructivos y no destructivos
+
+Los comandos destructivos afectan el historial de commits realizados; un ejemplo es `rebase`.  
+En cambio, los comandos no destructivos trabajan en base al historial sin modificarlo.
+
+Principalmente se usan los siguientes tres:
+
+  * **git reset**
+  Posee 2 opciones:
+
+    * **soft:** Mantiene los cambios que ocurrieron antes de hacer commit desde donde apuntaba.
+
+      * `git reset --soft <ID_commit_a_borrar>`
+
+      Básicamente solo elimina el commit, pero los cambios en nuestro Visual Studio antes de guardar el commit se mantienen, y también se mantiene el estado staged antes del commit.
+
+    * **hard:** Descarta cambios.
+
+      * `git reset --hard <ID_commit_a_borrar>`
+
+      Elimina el commit, los cambios del editor de nuestro Visual Studio y también el estado staged.
+    
+    También se puede usar simplemente el comando `git reset <ID_commit_a_borrar>`, que es como una mezcla de los dos: elimina el commit y también el estado staged, pero no elimina los cambios de nuestro Visual Studio que estaban en el commit.
+
+    Si después de borrar el commit volvemos a hacerlo, el mismo commit, el ID del commit cambia. Esto es bastante similar al comando `git commit --amend -m <nombre_commit>`, que sigue siendo el mismo commit pero con otro nombre e ID distinto.
+
+* **git revert** 
+  Revierte los cambios que un commit introdujo y crea un nuevo commit con los cambios revertidos.
+
+  Es un comando no destructivo, ya que no borra commits y solo afecta al commit padre del commit al cual queremos volver. Se hace con el siguiente comando:
+
+  * `git revert <ID_commit>`    
+
+  ¿A qué nos referimos con que solo afecta al commit padre del commit al cual queremos volver?
+
+  Por ejemplo, digamos que tenemos lo siguiente:
+
+
+    ```bash
+    $ git log --oneline
+
+    974c381 (Head -> main) 3er hola
+    2eddbea 2do hola
+    b14efc1 1er hola
+
+    ```
+
+    Al momento de querer hacer revert al commit "2do hola" con el comando `git revert 2eddbea`, nos aparecerá un conflicto a resolver en Visual Studio y los cambios a los que se quiere volver no serán los del commit "2do hola", sino que serán del padre, es decir, del commit "1er hola".
+
+  Para revertir el `revert`, simplemente utilizamos el comando `git revert --abort`, lo cual nos devuelve a nuestra situación anterior.
+
+* **git checkout**
+  Nos permite recuperar código específico de commits. Si bien el `git checkout` se utiliza para moverse entre ramas, este nos permite ver el contenido que tenían nuestros commits pasados.
+
+  El comando para utilizarlo es:
+
+  * `git checkout <ID_commit>`
+
+  Esto nos abrirá una ventana en Visual Studio donde nos muestra el estado de nuestro código en el commit seleccionado.
+
+  Para volver al **main**, utilizamos el comando:
+
+  `* git checkout main`
+
+## Comandos extra
+Para ver los cambios que hicimos en un commit, podemos utilizar el comando:
+
+* `git show <ID_commit>`
+
+Ahí nos mostrará los cambios que se hicieron en ese commit.
+
+Digamos que, por x o y motivo, borramos todos nuestros cambios y commits. Con el siguiente comando podemos verlos de nuevo:
+
+* `git reflog`
+
+Hacemos un `git revert <ID_commit_antes_de_borrar_todo>` y otra vez nos volverán a aparecer todos nuestros commits.
+
+Otra manera de volver a traer los commits es con el comando:
+
+* `git pull origin main`
+
+Esto solo funcionará si nuestros commits ya fueron guardados en la nube.
+
+## Comandos para deshacer cambios
+
+* `git reset --hard HEAD ~<N>`
+
+* `git reset --soft HEAD ~<N>`
+
+* `git revert HEAD ~<N>`
+
+* `git checkout HEAD ~<N>`
+
+  Se pone el **HEAD~<N>** porque es cuántos espacios recorremos hacia abajo a partir del HEAD.
+
+* `git reset --hard <SHA>`
+
+* `git reset --soft <SHA>`
+
+* `git revert <SHA>`
+
+* `git checkout <SHA>`
+
+  **SHA** viene siendo el ID del commit.
