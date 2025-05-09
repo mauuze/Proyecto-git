@@ -277,3 +277,20 @@ Lo que hace `git clone` es crear una copia del repositorio remoto en nuestro rep
 
 Para obtener la URL de un repositorio ya existente, la copiamos del siguiente lugar:
 
+### Escribiendo en el repositorio remoto
+Para poder subir cambios a nuestro repositorio remoto utilizamos el comando:
+
+* `git push origin <rama_de_la_que_queremos_subir_los_cambios>`
+    * Por lo general es la rama main o master, nuestra rama principal.
+
+Con esto nuestro repositorio remoto ya deberia contoner los archivos de la rama que subimos de nuestro repositorio local.
+
+Para observar nuestras ramas tanto del repositorio local y las ramas del repositorio remoto utilizamos el comando: 
+* `git branch -a`
+
+
+
+Las ramas que se estan de color rojo son las ramas que ya estan en el repositorio remoto.
+
+Para subir una rama a nuestro repositorio remoto esta primero debe estar en nuestro repositorio local, si intentamos subir una rama sin que este en nuestro repositorio local nos saldria lo siguiente: 
+
