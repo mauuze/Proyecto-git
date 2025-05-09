@@ -168,3 +168,31 @@ Este comando nos permite borrar la rama sin necesidad de que haya sido fusionada
 
 Y como podemos apreciar la rama se elimina sin advertirnos que no fue fusionada.
 
+### Resumen de comandos para ramas
+Para crear una nueva rama:
+* `git branch <nombre_de_nuestra_rama>`
+
+Para cambiar de rama se utiliza:
+* `git switch <nombre_de_rama_a_la_que_queremos_cambiar>`
+* `git checkout <nombre_de_rama_a_la_que_queremos_cambiar>`
+
+Para ver todas las ramas que tenemos en nuestro repositorio local:
+* `git branch`
+
+Para ver todas las ramas, incluyendo las del repositorio remoto:
+* `git branch -a`
+
+Para fusionar ramas:
+* `git merge <nombre_rama_a_fusionar>`
+
+En caso de que se pueda hacer un fast-forward pero queramos evitarlo y crear un commit de fusión, se utiliza:
+* `git merge <nombre_rama_a_fusionar> --no-ff`
+
+Para eliminar ramas fusionadas:
+* `git branch --delete <nombre_rama_a_eliminar>`
+* `git branch -d <nombre_rama_a_eliminar>`
+
+Para eliminar ramas no fusionadas:
+* `git branch -D <nombre_rama_a_eliminar>`
+
+
