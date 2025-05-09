@@ -458,3 +458,39 @@ Este método nos dice que los desarrolladores, ya en el ámbito laboral, pueden 
 ### Recomendación final
 
 No necesariamente tienes que apegarte al 100% a un flujo de trabajo. Lo más importante es que tú y tu equipo se sientan cómodos. Si lo desean, pueden optar por tomar partes de distintos flujos de trabajo; mientras estén cómodos y el flujo funcione, todo sirve.
+
+## Clase 6: Buenas prácticas en Git
+
+### ¿Para qué sirven las buenas prácticas?
+
+* Es un estándar manejado en la mayoría de los equipos de desarrollo.
+
+* Resolver conflictos o problemas durante el desarrollo es más fácil.
+
+* Tu historial de commits es más legible.
+
+### ¿Cada cuánto debería hacer un commit?
+
+Con frecuencia. Es mejor hacer commits pequeños, agrupando pequeñas mejoras o acciones, que un solo commit con todo lo que se quiera hacer.
+
+Hacer commits a menudo no significa que debas hacer commits sin sentido.
+
+### ¿Cómo escribir buenos commits?
+
+* Usa el verbo en imperativo (Add, Change, Fix, Remove).
+
+* No uses punto final ni puntos suspensivos en tus mensajes (a lo más, usa la coma).
+
+* Usa como máximo 50 caracteres para tu mensaje de commit.
+
+* Añade todo el contexto que sea necesario en el cuerpo del commit (con reglas de puntuación).
+
+* Considera usar utilidades para hacer commits.
+
+* Usa un prefijo para hacerlos más semánticos.
+
+
+**Ejemplo de commit:**
+
+`Add: se añadió la parte de ejemplo commit`
+
