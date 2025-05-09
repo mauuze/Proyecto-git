@@ -203,5 +203,27 @@ Digamos que en una rama realizamos cambios, pero en la de destino también reali
 
 Básicamente, un conflicto es una situación en la que Git no es capaz de determinar qué cambio debe prevalecer una vez ocurrida la fusión y, por lo tanto, requiere que el usuario lo resuelva.
 
-
 ![imagen_Git_conficto](imagenes/Git_conflicto.png)
+
+Al momento de que suceda un conflicto en la terminal, nos aparecerá lo siguiente:
+
+![imagen_conflictos_ejemplo](imagenes/conflictos_ejemplo.png)
+
+### Resolviendo conflictos
+Si estamos trabajando en Visual Studio, nos aparecerá lo siguiente:
+
+![imagen_conflictos_ejemplo2](imagenes/conflictos_ejemplo2.png)
+
+Ahora tenemos tres opciones:
+
+* Quedarnos con los cambios de la rama **main**
+
+![imagen_mantener_cambios_rama_main](imagenes/mantener_cambio_rama_main.png)
+
+* Quedarnos con los cambios de nuestra otra rama
+
+![imagen_mantener_cambios_rama_conflicto](imagenes/mantener_cambio_rama_conflicto.png)
+
+* Quedarnos con ambos cambios (rama **main** y nuestra rama)
+
+![imagen_mantener_cambios_ambas_ramas](imagenes/mantener_cambio_ambas_ramas.png)
