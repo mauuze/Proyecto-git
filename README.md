@@ -259,5 +259,21 @@ Finalmente, seleccionamos la opción **Create repository** al final.
 
 ![imagen_tutorial4](imagenes/tutorial%204.png)
 
-Así de sencillo podemos crear nuestro repositorio en GitHub.
+Así de sencillo podemos crear un repositorio en GitHub.
+
+### Enlazar un repositorio local con un repositorio remoto
+Para enlazar un repositorio, utilizamos el siguiente comando:
+* `git remote add origin <url_del_repositorio_GitHub>`
+  * **origin** es el nombre de la sincronización de nuestro repositorio remoto con nuestro repositorio local. Por estándar, se usa el alias **origin**.
+
+Para obtener la URL, simplemente copiamos esta parte:
+
+
+
+Si nos estamos conectando a un repositorio ya existente, utilizamos el siguiente comando:
+* `git clone <url_del_repositorio_GitHub>`
+
+Lo que hace `git clone` es crear una copia del repositorio remoto en nuestro repositorio local, para así poder trabajar en él.
+
+Para obtener la URL de un repositorio ya existente, la copiamos del siguiente lugar:
 
