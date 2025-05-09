@@ -342,4 +342,24 @@ Comando para subir nuestros cambios del repositorio local al repositorio remoto:
     Nos sirve para empujar (subir) cualquier cambio o modificacion del repositorio local al repositorio remoto
 
 * **Git pull**
-    Nos sirve para traer cambios del repositorio remoto al repositorio local.
+    Nos sirve para jalar (traer) cambios del repositorio remoto al repositorio local.
+
+### Comandos git push
+
+Comando para subir nuestros cambios del repositorio local al repositorio remoto:  
+* `git push origin <rama>`
+
+Comando para subir todas las ramas con su referencia adecuada:  
+* `git push --all`
+
+Comando para subir varias ramas:  
+* `git push origin <rama1> <rama2> <rama3>`
+
+Comando para forzar la subida de cambios al repositorio remoto. Muy peligroso, ya que puede sobrescribir y eliminar cambios realizados previamente o por otras personas:  
+* `git push -f <rama>`
+
+Comando para eliminar ramas del repositorio remoto:  
+* `git push -d origin <rama>`
+
+Comando para enlazar el origin con la rama. Por lo tanto, ya no es necesario usar `git push origin <rama>`, solo necesitaríamos poner `git push`:  
+* `git push -u origin <rama>`
