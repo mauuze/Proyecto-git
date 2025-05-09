@@ -195,4 +195,13 @@ Para eliminar ramas fusionadas:
 Para eliminar ramas no fusionadas:
 * `git branch -D <nombre_rama_a_eliminar>`
 
+### ¿Qué es un rebase?
+El rebase toma los últimos 4 commits y los convierte en uno solo, quedándonos solo con la fusión de estos y eliminando los commits que fueron fusionados.
 
+### Conflictos en Git
+Digamos que en una rama realizamos cambios, pero en la de destino también realizamos cambios en las mismas líneas de un archivo y luego queremos unirlas. ¿Qué sucederá? En este caso, tendríamos un conflicto.
+
+Básicamente, un conflicto es una situación en la que Git no es capaz de determinar qué cambio debe prevalecer una vez ocurrida la fusión y, por lo tanto, requiere que el usuario lo resuelva.
+
+
+![imagen_Git_conficto](imagenes/Git_conflicto.png)
