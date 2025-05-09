@@ -144,7 +144,7 @@ Entonces, para poder volver al camino principal, se necesita crear un commit que
 
 Ambos casos son una fusión. La única diferencia es que en uno se genera un commit explícito y en el otro no, ya que el fast-forward no necesita uno.
 
-## Eliminar ramas ¿Por qué?
+### Eliminar ramas ¿Por qué?
 Porque es una buena práctica. Además, las ramas tienen un propósito específico, lo que implica un corto período de vida. Así mantenemos limpio nuestro repositorio.
 
 Para eliminar ramas se utiliza el comando:
@@ -227,3 +227,37 @@ Ahora tenemos tres opciones:
 * Quedarnos con ambos cambios (rama **main** y nuestra rama)
 
 ![imagen_mantener_cambios_ambas_ramas](imagenes/mantener_cambio_ambas_ramas.png)
+## Clase 4: GitHub
+
+![imagen_github_logo](imagenes/github_logo.jpg)
+
+### ¿Git y GitHub son lo mismo?
+No, **Git** es un sistema de control de versiones. Por otro lado, **GitHub** es un servicio de alojamiento en la nube que utiliza Git para manejar repositorios.
+
+### ¿GitHub es único?
+No, existen otros servicios de alojamiento de código fuente como:
+* Bitbucket  
+* GitLab
+
+### Repositorios remotos
+Los repositorios remotos son repositorios que están hospedados en un servidor y sirven como punto de sincronización entre diferentes repositorios locales.
+
+### Cómo crear un repositorio
+Nos dirigimos a la sección de **repositorios** de nuestro perfil.  
+
+![imagen_tutorial1](imagenes/tutorial1.png)
+
+Una vez en la sección de repositorios de nuestro perfil, presionamos el botón **New**.
+
+![imagen_tutorial2](imagenes/tutorial2.png)
+
+Aquí podemos escoger el nombre de nuestro repositorio, agregar una descripción, elegir si será público o privado, y configurar otras opciones.
+
+![imagen_tutorial3](imagenes/tutorial3.png)
+
+Finalmente, seleccionamos la opción **Create repository** al final.
+
+![imagen_tutorial4](imagenes/tutorial%204.png)
+
+Así de sencillo podemos crear nuestro repositorio en GitHub.
+
