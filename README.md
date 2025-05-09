@@ -294,3 +294,16 @@ Las ramas que se estan de color rojo son las ramas que ya estan en el repositori
 
 Para subir una rama a nuestro repositorio remoto esta primero debe estar en nuestro repositorio local, si intentamos subir una rama sin que este en nuestro repositorio local nos saldria lo siguiente: 
 
+### Eliminar ramas de mi repositorio local que ya no se usan
+Digamos que una rama se borro ya del repositorio remoto pero la referencia sigue apareciendo en tu repositorio local sigue apareciendo, para eliminar esta referencia tienes que utilizar el siguiente comando:
+* `git remote prune origin`
+
+Esto basicamente actualiza las referencias de ramas que tiene tu repositorio loca con las de tu repositorio remoto.
+
+### Actulizar referencias de ramas en tu repositorio local
+Si podemos eliminar las referencias de una rama, tambien podemos actualizar y traer nuevas referencias de las ramas remotas, esto se hace con el comando: 
+* `git fetch`
+
+Es importante utilizar un `git fetch` antes de un **pull**, comando para traer cambios del repositorio remoto, ya que podriamos traer los cambios de otra rama a nuestra rama principal.
+
+Para poder utilizar una rama de tu repositorio remoto en tu repositorio local, primero debes hacer un switch a la referencia de esa rama.
