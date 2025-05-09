@@ -598,26 +598,7 @@ Principalmente se usan los siguientes tres:
 
   `* git checkout main`
 
-## Comandos extra
-Para ver los cambios que hicimos en un commit, podemos utilizar el comando:
-
-* `git show <ID_commit>`
-
-Ahí nos mostrará los cambios que se hicieron en ese commit.
-
-Digamos que, por x o y motivo, borramos todos nuestros cambios y commits. Con el siguiente comando podemos verlos de nuevo:
-
-* `git reflog`
-
-Hacemos un `git revert <ID_commit_antes_de_borrar_todo>` y otra vez nos volverán a aparecer todos nuestros commits.
-
-Otra manera de volver a traer los commits es con el comando:
-
-* `git pull origin main`
-
-Esto solo funcionará si nuestros commits ya fueron guardados en la nube.
-
-## Comandos para deshacer cambios
+### Comandos para deshacer cambios
 
 * `git reset --hard HEAD ~<N>`
 
@@ -638,3 +619,22 @@ Esto solo funcionará si nuestros commits ya fueron guardados en la nube.
 * `git checkout <SHA>`
 
   **SHA** viene siendo el ID del commit.
+
+### Comandos extra
+Para ver los cambios que hicimos en un commit, podemos utilizar el comando:
+
+* `git show <ID_commit>`
+
+Ahí nos mostrará los cambios que se hicieron en ese commit.
+
+Digamos que, por x o y motivo, borramos todos nuestros cambios y commits. Con el siguiente comando podemos verlos de nuevo:
+
+* `git reflog`
+
+Hacemos un `git revert <ID_commit_antes_de_borrar_todo>` y otra vez nos volverán a aparecer todos nuestros commits.
+
+Otra manera de volver a traer los commits es con el comando:
+
+* `git pull origin main`
+
+Esto solo funcionará si nuestros commits ya fueron guardados en la nube.
