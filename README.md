@@ -494,3 +494,16 @@ Hacer commits a menudo no significa que debas hacer commits sin sentido.
 
 `Add: se añadió la parte de ejemplo commit`
 
+### Prefijos para commits
+
+* **feat:** Para una nueva característica para el usuario.
+* **fix:** Para un bug que afecta al usuario.
+* **perf:** Para cambios que mejoran el rendimiento del sitio.
+* **build** Para cambios en el sistema de build, tareas de dspliegue, o instalación.
+* **ci:** Para cambios en la integración continua.
+* **docs:** Para cambios en la documentación.
+* **refactor:** Para refactorización del código como cambios de nombre de variables o funciones.
+* **style:** Para cambios de formato, tabulaciones, espacios o puntos y coma, etc; noafectan al usuario
+* **test:** Para tests o refactorización de uno ya existente.
+
+
