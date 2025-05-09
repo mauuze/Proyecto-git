@@ -434,4 +434,11 @@ La diferencia con GitHub Flow es que las ramas deben ser lo más efímeras y peq
 
 Este método debe contar si o si con un sistema de **CI/CD** (Integración y Entrega Continuas).
 
+### Ship / Show / Ask
+Este metodo nos dice que los desarrolladores ya en el ambito laboral pueden tomar decisiones coherente y no son niños, por ejemplo en los 2 anteriores metodos se les restringia el acceso a la rama main por que pueden cometer errores. 
 
+* **Ship:** Tus cambios se fusionan con la rama principal sin revisión, esto lo haces cuando estas 100% seguro de que tu cambio funciona bien.
+
+* **Show:** Abre una petición de cambios para que sean revisados por CI y se fusionan inmediatamente, es decir que si pasan el CI se fusionan y ademas se abre una **PR** para debate, esto se utiliza cuando estas un 80% seguro de que tu codigo funcione bien o si bien solo quieres que tu equipo tenga un contexto de lo que hiciste.
+
+* **Ask:** Abre una PR para discutir los cambios antes de fusionarlos, y se utiliza cuando estas menos de 10% de que tu codigo o implementación funcione bien, asi puedes recibir feedback y discutir los cambios.
