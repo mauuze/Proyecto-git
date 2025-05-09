@@ -454,3 +454,7 @@ Este método nos dice que los desarrolladores, ya en el ámbito laboral, pueden 
 * Las ramas son lo más pequeñas posible, tienen un tiempo de vida corto y siempre salen directamente desde la rama principal.
 
 * El equipo ha sabido lidiar con el ego individual, las personas confían en el resto del equipo y las pruebas automáticas pasan.
+
+### Recomendación final
+
+No necesariamente tienes que apegarte al 100% a un flujo de trabajo. Lo más importante es que tú y tu equipo se sientan cómodos. Si lo desean, pueden optar por tomar partes de distintos flujos de trabajo; mientras estén cómodos y el flujo funcione, todo sirve.
