@@ -404,3 +404,34 @@ Tenemos que subir nuestra rama con `git push` y a continuación hay 2 maneras:
 * Corrección y claridad. Sé específico acerca del problema que encuentras y haz que sea fácil para la otra persona corregir el error.
 
 * **Entiende el contexto**, es posible que, a veces, tengamos que aplicar soluciones temporales o parches a nuestro código y que, pese a no ser el más bonito, sí cumpla su cometido.
+
+## Clase 5: Flujos de trabajo
+
+### ¿Qué es un GitFlow?
+Es la manera en la que un equipo va a utilizar Git, a través de un cierto flujo para poder trabajar de manera colaborativa, siguiendo ciertas pautas que promueven un flujo u otro respecto a Git.
+
+### Git Flow
+Es el flujo de trabajo más antiguo, y utiliza más ramas:
+
+* **main (o master):** Contiene el código de producción, es decir, el código que ya se está utilizando y es visible.
+* **develop:** Código de preproducción, es decir, código que todavía debe ser probado y validado.
+* **feature:** Nuevas características para el proyecto.
+* **release:** Cambios de último momento antes de pasar a producción.
+* **hotfix:** Parches o correcciones de errores menores.
+
+### GitHub Flow
+Tiene la rama **main** y cualquier otra rama que se quiera integrar por medio de una **Pull Request (PR).**
+
+GitHub Flow es una alternativa más simple que Git Flow. Tiene menos liturgías, es más fácil de entender y favorece los despliegues continuos del proyecto.
+
+### Git Flow o GitHub Flow
+Depende de cada equipo y de la comodidad. Sin embargo, en cuanto a la seguridad al proteger la rama **main**, GitHub Flow ofrece más control, ya que necesariamente se debe revisar la **PR**, lo cual reduce la probabilidad de que aparezcan bugs.
+
+### Trunk-Based Development
+Bastante parecido a GitHub Flow. Utiliza solo la rama **main** y ramas auxiliares efímeras que son integradas mediante una **PR**.
+
+La diferencia con GitHub Flow es que las ramas deben ser lo más efímeras y pequeñas posible.
+
+Este método debe contar si o si con un sistema de **CI/CD** (Integración y Entrega Continuas).
+
+
