@@ -363,3 +363,17 @@ Comando para eliminar ramas del repositorio remoto:
 
 Comando para enlazar el origin con la rama. Por lo tanto, ya no es necesario usar `git push origin <rama>`, solo necesitaríamos poner `git push`:  
 * `git push -u origin <rama>`
+
+### Comandos git pull
+
+Comando para traer cambios del repositorio remoto al repositorio local:  
+* `git pull origin <rama>`
+
+Comando para unir la rama remota con la rama local y poder utilizar solo `git pull`:  
+* `git pull --set-upstream origin <rama>`
+
+Comando para traer todos los cambios de todas las ramas remotas al repositorio local:  
+* `git pull --all`
+
+Comando para traer todos los cambios de varias ramas remotas a la rama local:  
+* `git pull origin <rama1> <rama2> <rama3>`
