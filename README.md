@@ -377,3 +377,23 @@ Comando para traer todos los cambios de todas las ramas remotas al repositorio l
 
 Comando para traer todos los cambios de varias ramas remotas a la rama local:  
 * `git pull origin <rama1> <rama2> <rama3>`
+
+### ¿Qué es una Pull Request?
+Tambien abreviada **PR**, es una peticion de cambios que se envia al repositorio original.
+
+### ¿Comó se hace una Pull Request?
+Tenemos que subir nuestra rama con `git push` y a continuación hay 2 maneras:
+* Si subiste la rama recientemente te aparecera la opción en GitHub > Code.
+* Irnos direcamente al apartado de Pull Request.
+
+![imagen_Pull_request](imagenes/Pull%20_request.png)
+
+![imagen_Pull_request2](imagenes/Pull_request2.png)
+
+### Hacer una buena PR
+
+* **Enfoca tu código en una sola cosa**  
+  Es más fácil revisar y aceptar una Pull Request que hace una sola cosa, que revisar una Pull Request que hace muchas cosas.
+
+* **Explica tu Pull Request**  
+  Trata de ser lo más claro posible en la Pull Request. Además, puedes aprovechar para subir una imagen, video o incluso un GIF.
