@@ -647,34 +647,4 @@ Esto solo funcionará si nuestros commits ya fueron guardados en la nube.
 
 * Pueden ser tanto de parte del cliente como de parte del servidor.
 
-## Hooks del lado del cliente
 
-Solo afectan al repositorio local que los contiene
-
-* **pre-commit:** 
-
-  * Podrías comprobar si se está intentando hacer un commit de demasiados archivos.
-
-  * Puede ser un buen sitio para ejecutar el linter sobre los archivos que han sido modificados.
-
-* **prepare-commit-msg:**
-
-  * Para modificar el mensaje del commit o añadir cualquier informacón extra.
-
-* **commit-msg:**
-
-  * Es el sitio perfecto para hacer todas las comprobaciones pertinentes al mensaje.
-
-* **post-commit:**
-
-  * Su uso principal es la de notificar por Slack.
-
-* **pre-push:**
-
-  * Para ejecutar una bateria de tests.
-
-* **post-checkout y post-merge:**
-
-  * Permite limpiar el directorio de trabajo, tras realizar un checkout, o el de limpiar las ramas que ya no se usan tras realizar un merge.
-
-  ## 
