@@ -713,3 +713,36 @@ Git permite crear nuestros propios alias fácilmente para comandos que usamos ha
 Para crear nuestro propio comando debemos usar el comando `git config` y ponerlo de la siguiente manera:
 
 * `git config --global.[nombre_alias]`
+
+### Trucos Git
+* **Guardar tus cambios temporalmente**
+
+  * `git stash`
+
+  * `git stash -u`
+
+  * `git stash pop`
+
+* **Aplicar cambios de commits en específico**
+
+  * `git cherry-pick <SHA>`
+
+* **Detectar qué commit es el que ha introducido un bug**
+
+  * `git bisect`
+
+  * `git bisect start`
+
+  * `git bisect bad`
+
+  * `git bisect good`
+
+  * `git bisect reset`
+
+* **Cambiar el nombre de un commit**
+
+  * `git commit --amend -m <nuevo_nombre_commit>`
+
+* **Recupera un archivo de otra rama o commit**
+
+  * `git checkout <SHA> <Archivo`
