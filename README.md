@@ -641,13 +641,13 @@ Esto solo funcionará si nuestros commits ya fueron guardados en la nube.
 
 ## Clase 8: Hook, Alias y Trucos de Git
 
-## ¿Qué es un Hook?
+### ¿Qué es un Hook?
 
 * Un hook, o punto de enganche, son acciones que se ejecutan de manera automatizada luego de ciertas acciones determinadas en Git. POr ejemplo pueden ejecutarse luego de un commit, de un push o antes de estos.
 
 * Pueden ser tanto de parte del cliente como de parte del servidor.
 
-## Hooks del lado del cliente
+### Hooks del lado del cliente
 
 Solo afectan al repositorio local que los contiene
 
@@ -676,3 +676,29 @@ Solo afectan al repositorio local que los contiene
 * **post-checkout y post-merge:**
 
   * Permite limpiar el directorio de trabajo, tras realizar un checkout, o el de limpiar las ramas que ya no se usan tras realizar un merge.
+
+### Hooks del lado del servidor
+
+Es interesante conocerlos ya que páginas como Github o GitLab los usan intensivamente a la hora de construir.
+
+* **pre-receive**
+
+  * Para comprobar que los commits que se quieren guardar están bien formados. 
+
+  * Verificar que el usuario que intenta grabar los commits tiene los permisos necesarios para hacerlo.
+
+* **update**
+
+  * Puedes evitar de una forma granular cada actualización.
+
+* **pre-receive**
+  * Enviar un correo a todos los usuarios del repositorio que se han grabado nuevos cambios en el repositorio remoto.
+
+  * Reflejar en una UI las nuevas referencias, ramas o commits disponibles.
+
+### Creando mi primer Hook
+
+Para crear un propio hook sólo tienes que crear un archuvo `<nombre_del_hook> en la carpeta .git/hooks` y en él poner el código que quieras que se ejecute.
+
+Puedes usar todo tipo de intérpretes de lenguaje de programación como bash, node, phyton, peri, etc.
+
