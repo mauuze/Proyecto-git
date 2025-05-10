@@ -706,3 +706,10 @@ Puedes usar todo tipo de intérpretes de lenguaje de programación como bash, no
 
 Los alias permiten definir una serie de comandos que pueden ser usados en lugar de los nombres completos.
 
+### Creando mi primer alias
+
+Git permite crear nuestros propios alias fácilmente para comandos que usamos habitualmente en nustro proyecto.
+
+Para crear nuestro propio comando debemos usar el comando `git config` y ponerlo de la siguiente manera:
+
+* `git config --global.[nombre_alias]`
