@@ -702,7 +702,7 @@ Para crear un propio hook sólo tienes que crear un archuvo `<nombre_del_hook> e
 
 Puedes usar todo tipo de intérpretes de lenguaje de programación como bash, node, phyton, peri, etc.
 
-#### ¿Qué es una Alias?
+### ¿Qué es una Alias?
 
 Los alias permiten definir una serie de comandos que pueden ser usados en lugar de los nombres completos.
 
